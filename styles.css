@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+}
+h1 {
+        font-family: monospace;
+        text-transform: lowercase;
+        color: white;
+        margin-right: 100px;
+      }
