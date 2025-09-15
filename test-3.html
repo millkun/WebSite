@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="millkun">
+    <meta name="description" content="Личный сайт millkun">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta property="og:url" content="https://millkun.ru">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="millkun">
+    <meta property="og:description" content="Личный сайт millkun">
+    <meta property="og:site_name" content="Личный сайт millkun">
+    <meta property="og:image" content="https://millkun.ru/assets/images/q8b3z5/zq7b3inx5u.png">
+    <meta property="og:locale" content="ru">
+    <title>millkun</title>
+    <link rel="icon" href="/assets/images/q8b3z5/4ha8k6l1u5.ico">
+    <style>
+    
+        /*
+        -=-=-=-=-=-=-=-=-=-=-=- СТИЛИ СТРАНИЦЫ -=-=-=-=-=-=-=-=-=-=-=-     
+        */
+    
+        /* Подключение шрифтов */
+        @font-face {
+            font-family: 'YS Text';
+            src: url('/assets/fonts/YS/text-regular.woff2') format('woff2'),
+                 url('/assets/fonts/YS/text-regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'YS Text';
+            src: url('/assets/fonts/YS/text-regular-italic.woff2') format('woff2'),
+                 url('/assets/fonts/YS/text-regular-italic.woff') format('woff');
+            font-weight: 400;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'YS Text';
+            src: url('/assets/fonts/YS/text-medium.woff2') format('woff2'),
+                 url('/assets/fonts/YS/text-medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'YS Text';
+            src: url('/assets/fonts/YS/text-medium-italic.woff2') format('woff2'),
+                 url('/assets/fonts/YS/text-medium-italic.woff') format('woff');
+            font-weight: 500;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'YS Text';
+            src: url('/assets/fonts/YS/text-bold.woff2') format('woff2'),
+                 url('/assets/fonts/YS/text-bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'YS Text';
+            src: url('/assets/fonts/YS/text-bold-italic.woff2') format('woff2'),
+                 url('/assets/fonts/YS/text-bold-italic.woff') format('woff');
+            font-weight: 700;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'YS Text';
+            src: url('/assets/fonts/YS/text-light.woff2') format('woff2'),
+                 url('/assets/fonts/YS/text-light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'YS Text';
+            src: url('/assets/fonts/YS/text-light-italic.woff2') format('woff2'),
+                 url('/assets/fonts/YS/text-light-italic.woff') format('woff');
+            font-weight: 300;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'YS Text', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            background-color: #FFFFFF;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        header {
+            display: block;
+        }
+        
+        /*
+        -=-=-=-=-=-=-=-=-=-=-=- СТИЛИ ЗАГОЛОВКА -=-=-=-=-=-=-=-=-=-=-=-     
+        */
+        
+        /* Header Styles */
+        .lc-header-lpc__wrapper {
+            position: fixed;
+            width: 100%;
+            padding: 8px 11px;
+            background-color: transparent !important;
+            z-index: 1000;
+        }
+        
+        .lc-header-lpc {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+            max-width: 1280px;
+            box-sizing: border-box;
+            border-radius: 16px;
+            margin: 0 auto;
+            padding: 0 16px;
+            height: 44px;
+        }
+        
+        .lc-header-lpc__left-wrapper {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        
+        .lc-header-lpc__left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .lc-logo-block__logo-container {
+            display: inline-block;
+        }
+        
+        .lc-logo-block__logo-container_desktop {
+            display: block;
+        }
+        
+        .lc-logo-block__logo-container_mobile {
+            display: none;
+        }
+        
+        .lc-link {
+            color: inherit;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent; /* Добавляем это свойство */
+            tap-highlight-color: transparent; /* Для современных браузеров */
+        }
+        
+        .lc-link:active,
+        .lc-link:focus {
+            background-color: transparent !important;
+            outline: none;
+        }
+        
+        .lc-service-icon__img {
+            display: flex;
+            align-items: center;
+        }
+        
+        .lc-picture__image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Navigation Menu */
+        .lc-navigation-menu {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        
+        .lc-navigation-menu__wrapper {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        .lc-navigation-menu__item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-family: 'YS Text', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            cursor: pointer;
+            padding: 0 12px;
+            height: 100%;
+        }
+        
+        .link_pseudo {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            height: 100%;
+            color: #000000;
+        }
+        
+        .lc-navigation-menu__submenu-link-text {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .lc-styled-text__text {
+            font-size: 14px;
+            line-height: 18px;
+            white-space: nowrap;
+        }
+        
+        .lc-styled-text__text:hover {
+            color: #787878;
+            transition: color 0.2s ease;
+        }
+        
+        .lc-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            transition: transform 0.3s ease;
+        }
+        
+        .lc-navigation-menu__link_active .lc-icon {
+            transform: rotate(180deg);
+        }
+        
+        /* Submenu Styles */
+        .lc-navigation-menu__submenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 240px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            margin: 0;
+            padding: 8px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .lc-navigation-menu__item:hover .lc-navigation-menu__submenu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .lc-navigation-menu__submenu li {
+            margin: 0;
+        }
+        
+        .lc-navigation-menu__submenu .lc-link {
+            display: block;
+            padding: 10px 16px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000000;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+        
+        .lc-navigation-menu__submenu .lc-link:hover {
+            color: #787878;
+        }
+        
+        /* Burger Menu */
+        .lc-header-lpc__burger-wrapper {
+            display: none;
+        }
+        
+        .lc-header-lpc-burger__burger-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        
+        .lc-header-lpc-burger__menu-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .lc-header-lpc-burger__menu-wrapper_active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .lc-header-lpc-burger__paranja {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .lc-header-lpc-burger__menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 320px;
+            height: 100%;
+            background: #FFFFFF;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            overflow-y: auto;
+            max-width: 100vw;
+            box-sizing: border-box;
+            border-radius: 16px 0 0 16px;
+        }
+        
+        .lc-header-lpc-burger__menu-wrapper_active .lc-header-lpc-burger__menu {
+            transform: translateX(0);
+        }
+        
+        .lc-header-lpc-burger__close {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            width: 40px;
+            height: 40px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        .lc-header-lpc-burger__close::before,
+        .lc-header-lpc-burger__close::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 2px;
+            background: #000000;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        
+        .lc-header-lpc-burger__close::after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+        
+        .lc-header-lpc-burger__content {
+            padding: 72px 0 24px;
+            height: 100%;
+        }
+        
+        .lc-header-lpc-burger__links-wrapper {
+            height: 100%;
+        }
+        
+        .lc-header-lpc-burger__links .lc-navigation-menu__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 16px;
+        }
+        
+        .lc-header-lpc-burger__links .lc-navigation-menu__item {
+            width: 100%;
+            height: auto;
+            margin-bottom: 0;
+        }
+        
+        .lc-header-lpc-burger__links .link_pseudo {
+            width: 100%;
+        }
+        
+        .lc-header-lpc-burger__link-content {
+            width: 100%;
+        }
+        
+        .lc-header-lpc-burger__links .lc-navigation-menu__submenu {
+            position: static;
+            width: 100%;
+            box-shadow: none;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: transparent;
+        }
+        
+        .lc-header-lpc-burger__links .lc-navigation-menu__item_layout_vertical.lc-navigation-menu__item_active .lc-navigation-menu__submenu {
+            max-height: 500px;
+        }
+        
+        .lc-header-lpc-burger__links .lc-navigation-menu__submenu .lc-link {
+            padding: 5px 16px;
+            border-bottom: none;
+        }
+        
+        .lc-header-lpc-burger__links .lc-navigation-menu__submenu-arrow {
+            margin-left: auto;
+        }
+        
+        .lc-header-lpc-burger__links .lc-navigation-menu__item_active .lc-navigation-menu__submenu-arrow {
+            transform: rotate(180deg);
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .lc-header-lpc__menu {
+                display: none;
+            }
+            
+            .lc-header-lpc__burger-wrapper {
+                display: block;
+            }
+            
+            .lc-logo-block__logo-container_desktop {
+                display: none;
+            }
+            
+            .lc-logo-block__logo-container_mobile {
+                display: block;
+            }
+        }
+        
+        /* Исправляем вылезание бургер-кнопки */
+        @media (max-width: 215px) {
+            .lc-header-lpc {
+                padding: 0 8px;
+            }
+            
+            .lc-header-lpc-burger__burger-button {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        
+        /* Исправляем вылезание меню на маленьких экранах */
+        @media (max-width: 320px) {
+            .lc-header-lpc-burger__menu {
+                width: 100%;
+                right: 0;
+                border-radius: 0;
+            }
+            
+            .lc-header-lpc-burger__close {
+                left: 8px;
+            }
+            
+            .lc-header-lpc-burger__content {
+                padding: 64px 0 24px;
+            }
+        }
+        
+        /* Desktop menu item spacing */
+        .lc-navigation-menu__item_layout_horizontal {
+            /* margin-right: 16px; */
+        }
+        .lc-navigation-menu__item_layout_vertical {
+            border-bottom: 1px solid #f0f0f0;
+            padding: 16px 0px;
+        }
+        
+        /*
+        -=-=-=-=-=-=-=-=-=-=-=- СТИЛИ ХИРО -=-=-=-=-=-=-=-=-=-=-=-     
+        */
+        
+        .lc-hero__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            width: 100%;
+            min-height: 600px;
+            padding: 100px 20px 60px;
+            position: relative;
+        }
+        
+        .lc-hero__content-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .lc-hero__title_wrapper {
+            margin-bottom: 24px;
+            width: 100%;
+        }
+        
+        .lc-hero__text_title {
+            font-family: 'YS Text';
+            font-size: 42px;
+            font-weight: 700;
+            color: #FFFFFF;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+            line-height: 1.2;
+            max-width: 800px;
+        }
+        
+        .lc-hero__subtitle_wrapper {
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        .lc-hero__text_subtitle {
+            font-family: 'YS Text';
+            font-size: 20px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+            line-height: 1.5;
+        }
+        
+        .lc-hero__image_wrapper {
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .lc-hero__image-content {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Адаптивные стили */
+        @media (max-width: 768px) {
+            .lc-hero__content {
+                min-height: 500px;
+                padding: 80px 20px 40px;
+            }
+            
+            .lc-hero__text_title {
+                font-size: 32px;
+            }
+            
+            .lc-hero__text_subtitle {
+                font-size: 18px;
+            }
+            
+            .lc-hero__image_wrapper {
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .lc-hero__content {
+                min-height: 400px;
+                padding: 70px 16px 30px;
+            }
+            
+            .lc-hero__text_title {
+                font-size: 26px;
+            }
+            
+            .lc-hero__text_subtitle {
+                font-size: 16px;
+            }
+            
+            .lc-hero__image_wrapper {
+                max-width: 250px;
+            }
+        }
+        
+        @media (max-width: 320px) {
+            .lc-hero__content {
+                min-height: 360px;
+                padding: 60px 12px 20px;
+            }
+            
+            .lc-hero__text_title {
+                font-size: 22px;
+            }
+            
+            .lc-hero__text_subtitle {
+                font-size: 14px;
+            }
+            
+            .lc-hero__image_wrapper {
+                max-width: 200px;
+            }
+        }
+        
+        /*
+        -=-=-=-=-=-=-=-=-=-=-=- СТИЛИ ОБРАТНОЙ СВЯЗИ -=-=-=-=-=-=-=-=-=-=-=-     
+        */
+        
+        .lc-feedback__content {
+            background-color: lightgray;
+            width: 100%;
+            height: 1600px;
+        }
+        
+        /*
+        -=-=-=-=-=-=-=-=-=-=-=- СТИЛИ ФУТЕРА -=-=-=-=-=-=-=-=-=-=-=-     
+        */
+        
+        .lc-footer {
+            background-color: #FFFFFF;
+            padding: 32px 16px;
+            margin-top: auto;
+        }
+        
+        .lc-footer__content {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        .lc-footer__logo-image {
+            height: 32px;
+            width: auto;
+        }
+        
+        .lc-footer__nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        }
+        
+        .lc-footer__link {
+            color: #000000;
+            font-family: 'YS Text';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .lc-footer__link:hover {
+            color: #787878;
+        }
+        
+        .lc-footer__copyright-text {
+            font-family: 'YS Text';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 18px;
+            color: #000000;
+            text-align: center;
+        }
+        
+        /* Мобильные стили */
+        @media (max-width: 768px) {
+            .lc-footer {
+                padding: 24px 16px;
+            }
+            
+            .lc-footer__content {
+                gap: 20px;
+            }
+            
+            .lc-footer__nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+            }
+            
+            .lc-footer__logo-image {
+                height: 28px;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- -=-=-=-=- 
+    СЕКЦИЯ ЗАГОЛОВОК
+    -=-=-=-=- -->
+    <header class="lc-header-lpc__wrapper lc-header-lpc__wrapper_theme_light">
+        <div class="lc-header-lpc lc-header-lpc_right_none">
+            <div class="lc-header-lpc__left-wrapper">
+                <div class="lc-header-lpc__left lc-header-lpc__left_size_icon">
+                    <span class="lc-logo-block__logo-container lc-logo-block__logo-container_desktop lc-header-lpc__logo-container">
+                        <a class="Link link lc-link lc-service-icon lc-service-icon_size_m lc-service-icon_new lc-logo-block__logo-icon lc-logo-block__logo-icon_new lc-logo-block__logo-icon_desktop" href="https://millkun.ru" data-clickable="true">
+                            <div class="lc-picture lc-picture_migrated lc-service-icon__img" style="width: 83.25px;">
+                                <img alt="logo" class="lc-picture__full-size-block lc-picture__image lc-picture__image_loaded" src="/assets/images/q8b3z5/zq7b3inx5u.png" width="89" height="32" loading="lazy">
+                            </div>
+                        </a>
+                    </span>
+                    <span class="lc-logo-block__logo-container lc-logo-block__logo-container_mobile lc-header-lpc__logo-container">
+                        <a class="Link link lc-link lc-service-icon lc-service-icon_size_s lc-service-icon_new lc-logo-block__logo-icon lc-logo-block__logo-icon_new lc-logo-block__logo-icon_mobile" href="https://millkun.ru" data-clickable="true">
+                            <div class="lc-picture lc-picture_migrated lc-service-icon__img" style="width: 120px;">
+                                <img alt="logo" class="lc-picture__full-size-block lc-picture__image lc-picture__image_loaded" src="/assets/images/q8b3z5/zq7b3inx5u.png" width="111" height="40" loading="lazy">
+                            </div>
+                        </a>
+                    </span>
+                    <div class="lc-header-lpc__hidden"></div>
+                </div>
+            </div>
+            
+            <nav class="lc-navigation-menu lc-header-lpc__menu lc-header-lpc__menu_align_right">
+                <ul class="lc-navigation-menu__wrapper">
+                    <li class="lc-navigation-menu__item lc-navigation-menu__item_layout_horizontal">
+                        <a class="Link link lc-link lc-navigation-menu__link lc-navigation-menu__link_active" href="https://millkun.ru" role="link" tabindex="0">
+                            <div class="lc-styled-text">
+                                <div class="lc-styled-text__text">Главная</div>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="lc-navigation-menu__item lc-navigation-menu__item_layout_horizontal">
+                        <a class="Link link lc-link lc-navigation-menu__link lc-navigation-menu__link_active" href="https://millkun.ru/error/404" role="link" tabindex="0">
+                            <div class="lc-styled-text">
+                                <div class="lc-styled-text__text">Скоро</div>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="lc-navigation-menu__item lc-navigation-menu__item_layout_horizontal">
+                        <span class="link link_pseudo lc-link lc-navigation-menu__link lc-navigation-menu__link_active lc-navigation-menu__link_open-on_hover" aria-label="Университет" aria-expanded="false" role="button" tabindex="0">
+                            <span class="lc-navigation-menu__submenu-link-text">
+                                <div class="lc-styled-text">
+                                    <div class="lc-styled-text__text">Университет</div>
+                                </div>
+                            </span>
+                            <ul class="lc-navigation-menu__submenu" role="dialog" aria-modal="false" aria-label="Подменю">
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">Программ.</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">ОргЭВМиС</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">ООП</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">АиСД</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">ОС</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">ТОЭ</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">оЦОС</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">ГеомМод</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">БД</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">НепрМО</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">КТПрВП</div></div></a></li>
+                            </ul>
+                        </span>
+                    </li>
+                    
+                    <li class="lc-navigation-menu__item lc-navigation-menu__item_layout_horizontal">
+                        <span class="link link_pseudo lc-link lc-navigation-menu__link lc-navigation-menu__link_active lc-navigation-menu__link_open-on_hover" aria-label="Скоро" aria-expanded="false" role="button" tabindex="0">
+                            <span class="lc-navigation-menu__submenu-link-text">
+                                <div class="lc-styled-text">
+                                    <div class="lc-styled-text__text">Скоро</div>
+                                </div>
+                            </span>
+                            <ul class="lc-navigation-menu__submenu" role="dialog" aria-modal="false" aria-label="Подменю">
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">Скоро</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">Скоро</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">Скоро</div></div></a></li>
+                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-styled-text"><div class="lc-styled-text__text">Скоро</div></div></a></li>
+                            </ul>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="lc-header-lpc__right">
+                <div class="lc-header-lpc__burger-wrapper lc-header-lpc__burger-wrapper_align_right">
+                    <div class="lc-header-lpc-burger">
+                        <button class="lc-header-lpc-burger__burger-button" aria-expanded="false" aria-label="Открыть меню">
+                            <div class="lc-icon lc-icon_fill-type_fill lc-header-lpc-burger__burger-icon lc-header-lpc-burger__burger-icon_theme_light" aria-hidden="false">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M1 3H15M1 8H15M1 13H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="lc-header-lpc-burger__menu-wrapper lc-header-lpc-burger__menu-wrapper_hidden" role="dialog" aria-modal="true" aria-label="Меню">
+                            <div class="lc-header-lpc-burger__paranja"></div>
+                            <div class="lc-header-lpc-burger__menu lc-header-lpc-burger__menu_align_right">
+                                <button class="lc-header-lpc-burger__close lc-header-lpc-burger__close_align_left lc-header-lpc-burger__close_theme_light" aria-label="Закрыть меню"></button>
+                                <div class="lc-header-lpc-burger__menu-background lc-header-lpc-burger__menu-background_align_right lc-header-lpc-burger__menu-background_theme_light"></div>
+                                <div class="lc-header-lpc-burger__content">
+                                    <div class="lc-header-lpc-burger__main-content">
+                                        <div class="lc-header-lpc-burger__links-wrapper">
+                                            <nav class="lc-navigation-menu lc-header-lpc-burger__links lc-header-lpc-burger__links_with-top-padding lc-header-lpc-burger__links_with-bottom-padding lc-header-lpc-burger__links_theme_light">
+                                                <ul class="lc-navigation-menu__wrapper">
+                                                    <li class="lc-navigation-menu__item lc-navigation-menu__item_layout_vertical" style="margin-bottom: 0px;">
+                                                        <a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru" role="link" tabindex="0">
+                                                            <div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light">
+                                                                <div class="lc-styled-text">
+                                                                    <div class="lc-styled-text__text">Главная</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    <li class="lc-navigation-menu__item lc-navigation-menu__item_layout_vertical" style="margin-bottom: 0px;">
+                                                        <a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" role="link" tabindex="0">
+                                                            <div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light">
+                                                                <div class="lc-styled-text">
+                                                                    <div class="lc-styled-text__text">Скоро</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    <li class="lc-navigation-menu__item lc-navigation-menu__item_layout_vertical" style="margin-bottom: 0px;">
+                                                        <span class="link link_pseudo lc-link lc-navigation-menu__link" aria-label="Университет" aria-expanded="false" role="button" tabindex="0">
+                                                            <div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light">
+                                                                <span class="lc-navigation-menu__submenu-link-text">
+                                                                    <div class="lc-styled-text">
+                                                                        <div class="lc-styled-text__text">Университет</div>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                            <ul class="lc-navigation-menu__submenu" role="group" aria-modal="false" aria-label="Подменю">
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">Программ.</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">ОргЭВМиС</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">ООП</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">АиСД</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">ОС</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">ТОЭ</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">оЦОС</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">ГеомМод</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">БД</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">НепрМО</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">КТПрВП</div></div></div></a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    
+                                                    <li class="lc-navigation-menu__item lc-navigation-menu__item_layout_vertical" style="margin-bottom: 0px;">
+                                                        <span class="link link_pseudo lc-link lc-navigation-menu__link" aria-label="Скоро" aria-expanded="false" role="button" tabindex="0">
+                                                            <div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light">
+                                                                <span class="lc-navigation-menu__submenu-link-text">
+                                                                    <div class="lc-styled-text">
+                                                                        <div class="lc-styled-text__text">Скоро</div>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                            <ul class="lc-navigation-menu__submenu" role="group" aria-modal="false" aria-label="Подменю">
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">Скоро</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">Скоро</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">Скоро</div></div></div></a></li>
+                                                                <li><a class="Link link lc-link lc-navigation-menu__link" href="https://millkun.ru/error/404" data-clickable="true" tabindex="0"><div class="lc-header-lpc-burger__link-content lc-header-lpc-burger__link-content_theme_light"><div class="lc-styled-text"><div class="lc-styled-text__text">Скоро</div></div></div></a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- -=-=-=-=- 
+    СЕКЦИЯ ХИРО
+    -=-=-=-=- -->
+    
+    <div class="lc-hero__content">
+        <div class="lc-hero__content-inner">
+            <div class="lc-hero__title_wrapper">
+                <h1 class="lc-hero__text_title">Всё гениальное — просто.<br>Всё простое — на этом сайте</h1>
+            </div>
+            <div class="lc-hero__subtitle_wrapper">
+                <h2 class="lc-hero__text_subtitle">Я плачу за хостинг, чтобы вы могли увидеть эту фразу. Спасибо, что заглянули — это уже много значит</h2>
+            </div>
+            <div class="lc-hero__image_wrapper">
+                <img alt="hero picture" class="lc-hero__image-content" src="/assets/images/q8b3z5/a7z3q9w2i5.png" loading="lazy">
+            </div>
+        </div>
+    </div>
+    
+    <!-- -=-=-=-=- 
+    СЕКЦИЯ ОБРАТНАЯ СВЯЗЬ
+    -=-=-=-=- -->
+    
+    <div class="lc-feedback__content">
+        
+    </div>
+    
+    <!-- -=-=-=-=- 
+    СЕКЦИЯ ФУТЕР
+    -=-=-=-=- -->
+    
+    <footer class="lc-footer">
+        <div class="lc-footer__content">
+            <div class="lc-footer__logo">
+                <a href="https://millkun.ru" class="lc-link">
+                    <img src="/assets/images/q8b3z5/zq7b3inx5u.png" alt="Логотип" class="lc-footer__logo-image">
+                </a>
+            </div>
+            <nav class="lc-footer__nav">
+                <a href="https://millkun.ru" class="lc-link lc-footer__link">На главную</a>
+                <a href="https://millkun.ru/error/404" class="lc-link lc-footer__link">Условия использования</a>
+                <a href="https://millkun.ru/error/404" class="lc-link lc-footer__link">Политика конфиденциальности</a>
+            </nav>
+            <div class="lc-footer__copyright">
+                <span class="lc-footer__copyright-text">© 2025 millkun.ru — Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Burger menu functionality
+            const burgerButton = document.querySelector('.lc-header-lpc-burger__burger-button');
+            const burgerMenu = document.querySelector('.lc-header-lpc-burger__menu-wrapper');
+            const closeButton = document.querySelector('.lc-header-lpc-burger__close');
+            const paranja = document.querySelector('.lc-header-lpc-burger__paranja');
+            
+            if (burgerButton && burgerMenu) {
+                burgerButton.addEventListener('click', function() {
+                    burgerMenu.classList.add('lc-header-lpc-burger__menu-wrapper_active');
+                    document.body.style.overflow = 'hidden';
+                    burgerButton.setAttribute('aria-expanded', 'true');
+                });
+                
+                function closeMenu() {
+                    burgerMenu.classList.remove('lc-header-lpc-burger__menu-wrapper_active');
+                    document.body.style.overflow = '';
+                    burgerButton.setAttribute('aria-expanded', 'false');
+                    
+                    // Close all submenus when closing the main menu
+                    const mobileSubmenuItems = document.querySelectorAll('.lc-header-lpc-burger__links .lc-navigation-menu__item');
+                    mobileSubmenuItems.forEach(item => {
+                        item.classList.remove('lc-navigation-menu__item_active');
+                    });
+                }
+                
+                if (closeButton) closeButton.addEventListener('click', closeMenu);
+                if (paranja) paranja.addEventListener('click', closeMenu);
+                
+                // Mobile submenu functionality
+                const mobileMenuItems = document.querySelectorAll('.lc-header-lpc-burger__links .lc-navigation-menu__item_layout_vertical');
+                mobileMenuItems.forEach(item => {
+                    const linkPseudo = item.querySelector('.link_pseudo[aria-expanded]');
+                    if (linkPseudo) {
+                        item.addEventListener('click', function(e) {
+                            // Проверяем, что клик был не по ссылке внутри подменю
+                            if (!e.target.closest('.lc-navigation-menu__submenu .lc-link')) {
+                                e.preventDefault();
+                                const isActive = this.classList.contains('lc-navigation-menu__item_active');
+                                
+                                // Close all other submenus
+                                document.querySelectorAll('.lc-header-lpc-burger__links .lc-navigation-menu__item').forEach(el => {
+                                    if (el !== this) {
+                                        el.classList.remove('lc-navigation-menu__item_active');
+                                    }
+                                });
+                                
+                                // Toggle current submenu
+                                this.classList.toggle('lc-navigation-menu__item_active', !isActive);
+                                linkPseudo.setAttribute('aria-expanded', !isActive ? 'true' : 'false');
+                            }
+                        });
+                    }
+                });
+            }
+            
+            // Desktop submenu hover functionality
+            const desktopMenuItems = document.querySelectorAll('.lc-header-lpc__menu .link_pseudo[aria-expanded]');
+            desktopMenuItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.setAttribute('aria-expanded', 'true');
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.setAttribute('aria-expanded', 'false');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
